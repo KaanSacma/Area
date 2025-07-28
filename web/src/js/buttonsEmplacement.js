@@ -1,0 +1,40 @@
+const discordStyle = {
+    handleDiscordActionSelected: {
+        zIndex: 1,
+        position: "absolute",
+        backgroundColor: "#000000",
+        color: "#ffffff",
+        top: "30%",
+        left: "71%",
+        padding: 16,
+        borderRadius: 8,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    handleLoginWithDiscord: {
+        zIndex: 1,
+        position: "absolute",
+        backgroundColor: "#000000",
+        color: "#ffffff",
+        top: "38%",
+        left: "73%",
+        padding: 16,
+        borderRadius: 2,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    handleDiscordChannelChange: {
+        zIndex: 1,
+        position: "absolute",
+        backgroundColor: "#000000",
+        color: "#ffffff",
+        top: "38%",
+        left: "58%",
+        padding: 16,
+        borderRadius: 2,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+};
+
+export default discordStyle;

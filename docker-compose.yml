@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  server:
+    build: ./server  # Path to server Dockerfile directory
+    ports:
+      - "8080:8080"
+
+  client_mobile:
+    build: ./mobile  # Path to mobile Dockerfile directory
+    volumes:
+      - shared_data:/app/shared
+
+  client_web:
+    build: ./web  # Path to web Dockerfile directory
+    depends_on:
+      - client_mobile
+      - server
+    ports:
+      - "8081:8081"
+    volumes:
+      - shared_data:/app/shared
+
+volumes:
+  shared_data:
